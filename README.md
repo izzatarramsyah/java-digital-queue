@@ -1,6 +1,7 @@
 # Digital Queue App
 
-A backend queue management system built with Spring Boot, designed to simulate a real-time digital queuing system with event-driven communication and secured access. This project serves as a sandbox for exploring various aspects of Java backend development including Kafka, JWT, Scheduling, and Clean Architecture.
+A backend queue management system build with spring boot. Designed to simulate real-time digital queuing system with event driven communcation and secured access. This project as a sandbox for exploring various aspects of java backend development including kafka, jwt and clean acrchitecture
+
 ---
 
 ## 📦 Tech Stack
@@ -53,8 +54,7 @@ A backend queue management system built with Spring Boot, designed to simulate a
     - The application should now be running at `http://localhost:8080`.
 
         -  Login CURL :
-                ```bash
-                curl --location 'http://localhost:8080/api/users/login' \
+                ```bash curl --location 'http://localhost:8080/api/users/login' \
                 --header 'Content-Type: application/json' \
                 --data-raw '{
                   "email": "user_baru@example.com",
@@ -62,8 +62,7 @@ A backend queue management system built with Spring Boot, designed to simulate a
                 }' ```
         
         - Register CURL :
-              ```bash
-                curl --location 'http://localhost:8080/api/users/register' \
+              ```bash curl --location 'http://localhost:8080/api/users/register' \
                 --header 'Content-Type: application/json' \
                 --data-raw '{
                   "fullname": "user_baru",
