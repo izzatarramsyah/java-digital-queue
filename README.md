@@ -59,7 +59,7 @@ A backend queue management system built with Spring Boot, designed to simulate a
                 --data-raw '{
                   "email": "user_baru@example.com",
                   "password": "password123",
-                }'```
+                }' ```
         
         - Register CURL :
               ```bash
@@ -70,7 +70,7 @@ A backend queue management system built with Spring Boot, designed to simulate a
                   "email": "user_baru@example.com",
                   "password": "password123",
                   "role": "USER"
-                }'```
+                }' ```
         
         - Join Queue CURL : 
             ```bash curl --location 'http://localhost:8080/api/queue/{queueId}/join?userId={userId}' \
