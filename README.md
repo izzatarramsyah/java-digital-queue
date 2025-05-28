@@ -52,13 +52,14 @@ A backend queue management system built with Spring Boot, designed to simulate a
 4. **Access the API:**
     - The application should now be running at `http://localhost:8080`.
 
-Login CURL :
-curl --location 'http://localhost:8080/api/users/login' \
---header 'Content-Type: application/json' \
---data-raw '{
-  "email": "user_baru@example.com",
-  "password": "password123",
-}'
+ -  Login CURL :
+    ```bash
+    curl --location 'http://localhost:8080/api/users/login' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+      "email": "user_baru@example.com",
+      "password": "password123",
+    }'```
 
 Register CURL : 
 curl --location 'http://localhost:8080/api/users/register' \
