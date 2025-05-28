@@ -52,38 +52,39 @@ A backend queue management system built with Spring Boot, designed to simulate a
 4. **Access the API:**
     - The application should now be running at `http://localhost:8080`.
 
- -  Login CURL :
-    ```bash
-    curl --location 'http://localhost:8080/api/users/login' \
-    --header 'Content-Type: application/json' \
-    --data-raw '{
-      "email": "user_baru@example.com",
-      "password": "password123",
-    }'```
-
-Register CURL : 
-curl --location 'http://localhost:8080/api/users/register' \
---header 'Content-Type: application/json' \
---data-raw '{
-  "fullname": "user_baru",
-  "email": "user_baru@example.com",
-  "password": "password123",
-  "role": "USER"
-}'
-
-Join Queue CURL : 
-curl --location 'http://localhost:8080/api/queue/{queueId}/join?userId={userId}' \
---header 'Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyX2JhcnVAZXhhbXBsZS5jb20iLCJpc3MiOiJUaWNrZXRpblNlcnZpY2UiLCJpYXQiOjE3NDg0MTgxNzksImV4cCI6MTc0ODQyMTc3OX0.VF44kRt8cQ8Qak3twHlOUAhWIuXftiQOdUv0Gb3639M' \
---header 'Content-Type: application/json' \'
-
-Get Queue Today CURL : 
-curl --location 'http://localhost:8080/api/queue/today'
-
-Get Queue Entries CURL : 
-curl --location 'http://localhost:8080/api/queue/{queueId}/entries'
-
-Call Next Queue CURL : 
-curl --location --request POST 'http://localhost:8080/api/queue/1/next'
+        -  Login CURL :
+                ```bash
+                curl --location 'http://localhost:8080/api/users/login' \
+                --header 'Content-Type: application/json' \
+                --data-raw '{
+                  "email": "user_baru@example.com",
+                  "password": "password123",
+                }'```
+        
+        - Register CURL :
+              ```bash
+                curl --location 'http://localhost:8080/api/users/register' \
+                --header 'Content-Type: application/json' \
+                --data-raw '{
+                  "fullname": "user_baru",
+                  "email": "user_baru@example.com",
+                  "password": "password123",
+                  "role": "USER"
+                }'```
+        
+        - Join Queue CURL : 
+            ```bash curl --location 'http://localhost:8080/api/queue/{queueId}/join?userId={userId}' \
+            --header 'Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyX2JhcnVAZXhhbXBsZS5jb20iLCJpc3MiOiJUaWNrZXRpblNlcnZpY2UiLCJpYXQiOjE3NDg0MTgxNzksImV4cCI6MTc0ODQyMTc3OX0.VF44kRt8cQ8Qak3twHlOUAhWIuXftiQOdUv0Gb3639M' \
+            --header 'Content-Type: application/json' \' ```
+        
+        - Get Queue Today CURL : 
+        ```bash curl --location 'http://localhost:8080/api/queue/today' ```
+        
+        - Get Queue Entries CURL : 
+        ```bash curl --location 'http://localhost:8080/api/queue/{queueId}/entries' ```
+        
+        - Call Next Queue CURL : 
+        ```bash curl --location --request POST 'http://localhost:8080/api/queue/1/next' ```
 
 ---
 
